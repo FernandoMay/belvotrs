@@ -17,7 +17,7 @@ const Home: React.FC = () => {
     // }, []);
   
     // //if (!linkId) return <p>Loading...</p>;
-    const linkId : string = "0d3ffb69-f83b-456e-ad8e-208d0998d71d";
+    const linkId: string = process.env.NEXT_PUBLIC_BELVO_LINKID as string;
 
   return (
     <div>
