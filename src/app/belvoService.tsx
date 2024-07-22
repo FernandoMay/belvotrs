@@ -28,24 +28,24 @@ export const getTransactions = async (linkId: string) => {
   }
 };
 
-export const createLink = async () => {
-    try {
-      const response = await axios.post(
-        `${BASE_URL}/api/links/`,
-        {
-          institution: 'erebor_mx_retail',
-          username: 'username',
-          password: 'password',
-          access_mode: 'single'
-        },
-        {
-          headers: getAuthHeaders()
-        }
-      );
+// export const createLink = async () => {
+//     try {
+//       const response = await axios.post(
+//         `${BASE_URL}/api/links/`,
+//         {
+//           institution: 'erebor_mx_retail',
+//           username: 'username',
+//           password: 'password',
+//           access_mode: 'single'
+//         },
+//         {
+//           headers: getAuthHeaders()
+//         }
+//       );
   
-      return response.data.id; // Este es el linkId
-    } catch (error) {
-      console.error('Error creating link:', error);
-      throw error;
-    }
-  };
+//       return response.data.id; // Este es el linkId
+//     } catch (error) {
+//       console.error('Error creating link:', error);
+//       throw error;
+//     }
+//   };

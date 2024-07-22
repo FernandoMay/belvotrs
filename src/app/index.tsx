@@ -1,21 +1,23 @@
 import React, { useEffect, useState }  from 'react';
 import TransactionsTable from '../app/transactionsTable';
 import TransactionsCharts from '../app/transactionsCharts';
-import { createLink } from '../app/belvoService';
+// import { createLink } from '../app/belvoService';
 
 const Home: React.FC = () => {
-    const [linkId, setLinkId] = useState<string | null>(null);
+    // const [linkId, setLinkId] = useState<string | null>(null);
 
-    useEffect(() => {
-      const fetchLinkId = async () => {
-        const id = await createLink();
-        setLinkId(id);
-      };
+    // useEffect(() => {
+    //   const fetchLinkId = async () => {
+    //     const id = await createLink();
+    //     setLinkId(id);
+    //   };
   
-      fetchLinkId();
-    }, []);
+    //   fetchLinkId();
+    // }, []);
   
-    if (!linkId) return <p>Loading...</p>;
+    // if (!linkId) return <p>Loading...</p>;
+    
+    const linkId : string = "0d3ffb69-f83b-456e-ad8e-208d0998d71d";
 
   return (
     <div>
